@@ -187,11 +187,19 @@ namespace UdpChat.ViewModel
 
         public void DisconnectExecute()
         {
-            Chat.SendUserLeaving();
-            Chat.Disconnect();
+            if (Chat != null)
+            {
+                Chat.SendUserLeaving();
+                Chat.Disconnect();
+            }
             _chat = null;
             ChatInterfaceVisibility = Visibility.Collapsed;
             LoginInterfaceVisibility = Visibility.Visible;
+        }
+
+        public void OnWindowClosed()
+        {
+            DisconnectExecute();
         }
 
         #endregion

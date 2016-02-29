@@ -10,6 +10,7 @@ namespace UdpChat.View
         public MainWindow()
         {
             InitializeComponent();
+            Closed += (sender, args) => { ViewModel.OnWindowClosed(); };
         }
     }
 }
