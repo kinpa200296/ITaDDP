@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript тренинг</title>
+</head>
+<body>
+    <table align="center">
+        <tr id="title">
+            <td align="center">
+                <font face="serif" size="7" color="#006400">
+                    Тренинг по <i>JavaScript</i> компании <strong>NonExistentSoft</strong>
+                </font>
+            </td>
+        </tr>
+        <tr>
+            <td align="center">
+                <font face="serifs" size="4" color="#b8860b">
+                    Данный тренинг посвящён актуальным подходам, технологиям и инструментальным
+                    средствам разработки на <i>JavaScript</i>.
+                </font>
+            </td>
+        </tr>
+        <tr>
+            <td><hr color="#006400"></td>
+        </tr>
+        <tr id="description">
+            <td>Посещая занятия данного курса, <em>Вы</em>:</td>
+        </tr>
+        <tr>
+            <td>
+                <ul type="circle">
+                    <li>узнаете о последних тенденциях и трендах в <i>JavaScript</i></li>
+                    <li>
+                        познакомитесь с
+                        <abbr title="Hyper Text Markup Language"><i>HTML</i></abbr>,
+                        <abbr title="Cascade Style Sheets"><i>CSS</i></abbr> и
+                        <abbr title="HyperText Transfer Protocol"><i>HTTP</i></abbr>
+                    </li>
+                    <li>научитесь выполнять юнит-тестирование клиентского кода</li>
+                    <li>познакомитесь с архитектурой приложений и структурой типовых проектов</li>
+                    <li>получите представление об инструментах современного <i>Javascript-разработчика</i>.</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Спектр рассматриваемых тем включает в себя как основы
+                <abbr title="Hyper Text Markup Language"><i>HTML</i></abbr>,
+                <abbr title="Cascade Style Sheets"><i>CSS</i></abbr> и
+                <i>JavaScript</i>, так и
+                практическое углубленное изучение популярных <i>веб-технологий</i>.
+            </td>
+        </tr>
+        <tr id="code_sample">
+            <td>
+                <hr color="#006400">
+                <pre>
+    $(document).ready(function(){
+        $(".btn-slide").click(function(){
+            $("#panel").slideToggle("slow");
+            $(this).toggleClass("active");
+        });
+    });
+                </pre>
+                <hr color="#006400">
+            </td>
+        </tr>
+        <tr id="topics_table">
+            <td align="center">
+                <table width="100%" border="3" bordercolor="#b8860b" summary="Topics table"
+                       cellspacing="0" cellpadding="10" cols="3">
+                    <thead>
+                        <tr>
+                            <th id="topic" width="20%">
+                                <font size="5" color="#b8860b"><b>Темы</b></font>
+                            </th>
+                            <th id="topic_content" width="40%">
+                                <font size="5" color="#b8860b"><b>Содержание тем</b></font>
+                            </th>
+                            <th id="timetable" width="40%">
+                                <font size="5" color="#b8860b"><b>Рассписание занятий</b></font>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th id="topic_http" headers="topic">
+                                <font color="#006400">
+                                    <strong>
+                                        Протокол <abbr title="HyperText Transfer Protocol"><i>HTTP</i></abbr>
+                                    </strong>
+                                </font>
+                            </th>
+                            <td headers="topic_content topic_http">
+                                <ul type="disc">
+                                    <li>Основы компьютерных сетей</li>
+                                    <li>
+                                        7-уровневая модель
+                                        <abbr title="Open System Interconnection"><i>OSI</i></abbr>
+                                    </li>
+                                    <li>Структура <i>HTTP-зароса</i>. <i>HTTP-заголовки</i></li>
+                                    <li>Структура <i>HTTP-ответа</i>. Коды состояния</li>
+                                </ul>
+                            </td>
+                            <td headers="timetable topic_http">
+                                <ul type="square">
+                                    <li>
+                                        <time datetime="2016-09-19">19 сентября</time>
+                                        <time datetime="2016-09-19T16:00Z">16:00</time> -
+                                        <time datetime="2016-09-19T18:00Z">18:00</time>,
+                                        <time datetime="2016-09-20">20 сентября</time>
+                                        <time datetime="2016-09-20T10:00Z">10:00</time> -
+                                        <time datetime="2016-09-20T12:00Z">12:00</time>
+                                    </li>
+                                    <li>
+                                        <time datetime="2016-09-21">21 сентября</time>
+                                        <time datetime="2016-09-21T16:00Z">16:00</time> -
+                                        <time datetime="2016-09-21T18:00Z">18:00</time>,
+                                        <time datetime="2016-09-22">22 сентября</time>
+                                        <time datetime="2016-09-22T10:00Z">10:00</time> -
+                                        <time datetime="2016-09-22T12:00Z">12:00</time>
+                                    </li>
+                                    <li>
+                                        <time datetime="2016-09-23">23 сентября</time>
+                                        <time datetime="2016-09-23T16:00Z">16:00</time> -
+                                        <time datetime="2016-09-23T18:00Z">18:00</time>,
+                                        <time datetime="2016-09-24">24 сентября</time>
+                                        <time datetime="2016-09-24T10:00Z">10:00</time> -
+                                        <time datetime="2016-09-24T12:00Z">12:00</time>
+                                    </li>
+                                    <li>
+                                        <time datetime="2016-09-26">26 сентября</time>
+                                        <time datetime="2016-09-26T16:00Z">16:00</time> -
+                                        <time datetime="2016-09-26T18:00Z">18:00</time>,
+                                        <time datetime="2016-09-27">27 сентября</time>
+                                        <time datetime="2016-09-27T10:00Z">10:00</time> -
+                                        <time datetime="2016-09-27T12:00Z">12:00</time>
+                                    </li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th id="topic_html" headers="topic">
+                                <font color="#006400">
+                                    <strong>
+                                        <abbr title="Hyper Text Markup Language"><i>HTML</i></abbr>
+                                    </strong>
+                                </font>
+                            </th>
+                            <td headers="topic_content topic_html">
+                                <ul type="disc">
+                                    <li>Синтаксис <abbr title="Hyper Text Markup Language"><i>HTML</i></abbr></li>
+                                    <li>Структура <i>HTML-документа</i></li>
+                                    <li>Группировка контента, ссылки и якоря, таблицы</li>
+                                    <li>Формы и элементы управления, фреймы, медиа-объекты</li>
+                                </ul>
+                            </td>
+                            <td headers="timetable topic_html">
+                                <ul type="square">
+                                    <li>
+                                        <time datetime="2016-09-28">28 сентября</time>
+                                        <time datetime="2016-09-28T16:00Z">16:00</time> -
+                                        <time datetime="2016-09-28T18:00Z">18:00</time>,
+                                        <time datetime="2016-09-29">29 сентября</time>
+                                        <time datetime="2016-09-29T10:00Z">10:00</time> -
+                                        <time datetime="2016-09-29T12:00Z">12:00</time>
+                                    </li>
+                                    <li>
+                                        <time datetime="2016-09-30">30 сентября</time>
+                                        <time datetime="2016-09-30T16:00Z">16:00</time> -
+                                        <time datetime="2016-09-30T18:00Z">18:00</time>,
+                                        <time datetime="2016-10-01">1 октября</time>
+                                        <time datetime="2016-10-01T10:00Z">10:00</time> -
+                                        <time datetime="2016-10-01T12:00Z">12:00</time>
+                                    </li>
+                                    <li>
+                                        <time datetime="2016-10-03">3 октября</time>
+                                        <time datetime="2016-10-03T16:00Z">16:00</time> -
+                                        <time datetime="2016-10-03T18:00Z">18:00</time>,
+                                        <time datetime="2016-10-04">4 октября</time>
+                                        <time datetime="2016-10-04T10:00Z">10:00</time> -
+                                        <time datetime="2016-10-04T12:00Z">12:00</time>
+                                    </li>
+                                    <li>
+                                        <time datetime="2016-10-05">5 октября</time>
+                                        <time datetime="2016-10-05T16:00Z">16:00</time> -
+                                        <time datetime="2016-10-05T18:00Z">18:00</time>,
+                                        <time datetime="2016-10-06">6 октября</time>
+                                        <time datetime="2016-10-06T10:00Z">10:00</time> -
+                                        <time datetime="2016-10-06T12:00Z">12:00</time>
+                                    </li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th id="topic_css" headers="topic">
+                                <font color="#006400">
+                                    <strong>
+                                        <abbr title="Cascade Style Sheets"><i>CSS</i></abbr>
+                                    </strong>
+                                </font>
+                            </th>
+                            <td headers="topic_content topic_css">
+                                <ul type="disc">
+                                    <li>
+                                        Синтаксис <abbr title="Cascade Style Sheets"><i>CSS</i></abbr>,
+                                        селекторы <abbr title="Cascade Style Sheets"><i>CSS</i></abbr>
+                                    </li>
+                                    <li>Блоки, их размеры, поля и позиционирование</li>
+                                    <li>Работа с текстом, настройка списков и таблиц</li>
+                                    <li>Трансформация, анимация, медиа-запросы</li>
+                                    <li><i>Bootstrap</i></li>
+                                </ul>
+                            </td>
+                            <td headers="timetable topic_css">
+                                <ul type="square">
+                                    <li>
+                                        <time datetime="2016-10-07">7 октября</time>
+                                        <time datetime="2016-10-07T16:00Z">16:00</time> -
+                                        <time datetime="2016-10-07T18:00Z">18:00</time>,
+                                        <time datetime="2016-10-08">8 октября</time>
+                                        <time datetime="2016-10-08T10:00Z">10:00</time> -
+                                        <time datetime="2016-10-08T12:00Z">12:00</time>
+                                    </li>
+                                    <li>
+                                        <time datetime="2016-10-10">10 октября</time>
+                                        <time datetime="2016-10-10T16:00Z">16:00</time> -
+                                        <time datetime="2016-10-10T18:00Z">18:00</time>,
+                                        <time datetime="2016-10-11">11 октября</time>
+                                        <time datetime="2016-10-11T10:00Z">10:00</time> -
+                                        <time datetime="2016-10-11T12:00Z">12:00</time>
+                                    </li>
+                                    <li>
+                                        <time datetime="2016-10-12">12 октября</time>
+                                        <time datetime="2016-10-12T16:00Z">16:00</time> -
+                                        <time datetime="2016-10-12T18:00Z">18:00</time>,
+                                        <time datetime="2016-10-13">13 октября</time>
+                                        <time datetime="2016-10-13T10:00Z">10:00</time> -
+                                        <time datetime="2016-10-13T12:00Z">12:00</time>
+                                    </li>
+                                    <li>
+                                        <time datetime="2016-10-14">14 октября</time>
+                                        <time datetime="2016-10-14T16:00Z">16:00</time> -
+                                        <time datetime="2016-10-14T18:00Z">18:00</time>,
+                                        <time datetime="2016-10-15">15 октября</time>
+                                        <time datetime="2016-10-15T10:00Z">10:00</time> -
+                                        <time datetime="2016-10-15T12:00Z">12:00</time>
+                                    </li>
+                                    <li>
+                                        <time datetime="2016-10-17">17 октября</time>
+                                        <time datetime="2016-10-17T15:00Z">15:00</time> -
+                                        <time datetime="2016-10-17T19:00Z">19:00</time>,
+                                        <time datetime="2016-10-18">18 октября</time>
+                                        <time datetime="2016-10-18T10:00Z">10:00</time> -
+                                        <time datetime="2016-10-18T14:00Z">14:00</time>
+                                    </li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th id="topic_js" headers="topic">
+                                <font color="#006400">
+                                    <strong><i>JavaScript</i></strong>
+                                </font>
+                            </th>
+                            <td headers="topic_content topic_js">
+                                <ul type="disc">
+                                    <li>Базовый синтаксис, функции</li>
+                                    <li>
+                                        <abbr title="Объектно-Ориентиованное Программирование"><i>ООП</i></abbr>
+                                        в <i>JavaScript</i>, прототипы
+                                    </li>
+                                    <li><i>Ajax</i></li>
+                                    <li><i>jQuery</i></li>
+                                    <li><i>Node.js</i></li>
+                                    <li><i>MV* frameworks(AngularJS, Backbone.js, Ember.js)</i></li>
+                                </ul>
+                            </td>
+                            <td headers="timetable topic_js">
+                                <ul type="square">
+                                    <li>
+                                        <time datetime="2016-10-19">19 октября</time>
+                                        <time datetime="2016-10-19T16:00Z">16:00</time> -
+                                        <time datetime="2016-10-19T20:00Z">20:00</time>,
+                                        <time datetime="2016-10-20">20 октября</time>
+                                        <time datetime="2016-10-20T10:00Z">10:00</time> -
+                                        <time datetime="2016-10-20T14:00Z">14:00</time>
+                                    </li>
+                                    <li>
+                                        <time datetime="2016-10-21">21 октября</time>
+                                        <time datetime="2016-10-21T16:00Z">16:00</time> -
+                                        <time datetime="2016-10-21T20:00Z">20:00</time>,
+                                        <time datetime="2016-10-22">22 октября</time>
+                                        <time datetime="2016-10-22T10:00Z">10:00</time> -
+                                        <time datetime="2016-10-22T14:00Z">14:00</time>
+                                    </li>
+                                    <li>
+                                        <time datetime="2016-10-24">24 октября</time>
+                                        <time datetime="2016-10-24T16:00Z">16:00</time> -
+                                        <time datetime="2016-10-24T20:00Z">20:00</time>,
+                                        <time datetime="2016-10-25">25 октября</time>
+                                        <time datetime="2016-10-25T10:00Z">10:00</time> -
+                                        <time datetime="2016-10-25T14:00Z">14:00</time>
+                                    </li>
+                                    <li>
+                                        <time datetime="2016-10-26">26 октября</time>
+                                        <time datetime="2016-10-26T16:00Z">16:00</time> -
+                                        <time datetime="2016-10-26T20:00Z">20:00</time>,
+                                        <time datetime="2016-10-27">27 октября</time>
+                                        <time datetime="2016-10-27T10:00Z">10:00</time> -
+                                        <time datetime="2016-10-27T14:00Z">14:00</time>
+                                    </li>
+                                    <li>
+                                        <time datetime="2016-10-28">28 октября</time>
+                                        <time datetime="2016-10-28T16:00Z">16:00</time> -
+                                        <time datetime="2016-10-28T20:00Z">20:00</time>,
+                                        <time datetime="2016-10-29">29 октября</time>
+                                        <time datetime="2016-10-29T10:00Z">10:00</time> -
+                                        <time datetime="2016-10-29T14:00Z">14:00</time>
+                                    </li>
+                                    <li>
+                                        <time datetime="2016-10-31">31 октября</time>
+                                        <time datetime="2016-10-31T16:00Z">16:00</time> -
+                                        <time datetime="2016-10-31T20:00Z">20:00</time>,
+                                        <time datetime="2016-11-1">1 ноября</time>
+                                        <time datetime="2016-11-1T10:00Z">10:00</time> -
+                                        <time datetime="2016-11-1T14:00Z">14:00</time>
+                                    </li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
