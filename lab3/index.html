@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Практика в компании NonExistentSoft</title>
+</head>
+<body>
+    <table align="center">
+        <tr>
+            <td align="center">
+                <a href="http://www.NonExistentSoft.by">
+                    <img src="image/logo.png" alt="Логотип компании" title="Логотип компании">
+                </a>
+            </td>
+        </tr>
+        <tr>
+            <td align="center">
+                <video controls width="1000px" preload="metadata">
+                    <source src="video/about.mp4" type="video/mp4">
+                    К сожалению ваш браузер не может проиграть наш видеоролик
+                </video>
+            </td>
+        </tr>
+        <tr>
+            <td align="center">
+                Если Вы хотите почуствовать себя профессиональном среди профессионалов,
+                то компания <strong>NonExistentSoft</strong> приглашает <em>Вас</em> пройти<br>
+                <i>производственную</i> или <i>преддипломную</i> практику. Для того,
+                чтобы попасть к нам на практику <em>Вам</em> необходимо заполнить следующую форму:
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <form action="result.html" method="post" enctype="multipart/form-data"
+                      autocomplete="off" target="_self" name="student_form" accept-charset="utf-8">
+                    <table align="center" cellpadding="5">
+                        <tr>
+                            <td><label for="first_name">Имя:</label></td>
+                            <td>
+                                <input type="text" id="first_name" name="first_name"
+                                       placeholder="Ваше имя..." required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="last_name">Фамилия:</label></td>
+                            <td>
+                                <input type="text" id="last_name" name="last_name"
+                                       placeholder="Ваша фамилия..." required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="middle_name">Отчество:</label></td>
+                            <td>
+                                <input type="text" id="middle_name" name="middle_name"
+                                       placeholder="Ваше отчество..." required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="cellphone">Мобильный телефон:</label></td>
+                            <td>
+                                <input type="tel" id="cellphone" name="cellphone"
+                                       placeholder="Ваш телефон..." required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="university">Университет:</label></td>
+                            <td>
+                                <input type="text" id="university" name="university"
+                                       placeholder="Ваш университет..." required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="faculty">Факультет:</label></td>
+                            <td>
+                                <input type="text" id="faculty" name="faculty"
+                                       placeholder="Ваш факультет..." required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="specialty">Специальность:</label></td>
+                            <td>
+                                <input type="text" id="specialty" name="specialty"
+                                       placeholder="Ваша специальность..." required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Тип практики:</td>
+                            <td>
+                                <input type="radio" name="practice_type" checked value="intern" title="Производственная">
+                                Производственная<br>
+                                <input type="radio" name="practice_type" value="diploma" title="Преддипломная">
+                                Преддипломная<br>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="practice_start">Дата начала практики:</label></td>
+                            <td>
+                                <input type="date" id="practice_start" name="practice_start" min="2016-06-01"
+                                       max="2016-06-15" title="Дата начала практики" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="practice_end">Дата окончания практики:</label></td>
+                            <td>
+                                <input type="date" id="practice_end" name="practice_end" min="2016-07-01" max="2016-07-15"
+                                title="Дата окончания практики" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Желаемое время присутствия в офисе:</td>
+                            <td>
+                                с <input type="time" name="day_start" title="Начало рабочего дня">
+                                до <input type="time" name="day_end" title="Конец рабочего дня">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" align="center">
+                                Укажите свои навыки и степень владения ими:
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center">Навык</td>
+                            <td align="center">Степень владения</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <select name="language" title="Язык программирования">
+                                    <option disabled selected value="none">Укажите язык программирования</option>
+                                    <option value="cpp">C++</option>
+                                    <option value="csharp">C#</option>
+                                    <option value="java">Java</option>
+                                    <option value="python">Python</option>
+                                </select>
+                            </td>
+                            <td>
+                                <input type="radio" name="language_level" value="low" title="Начальный" checked>
+                                Начальный<br>
+                                <input type="radio" name="language_level" value="medium" title="Средний">
+                                Средний<br>
+                                <input type="radio" name="language_level" value="high" title="Высокий">
+                                Высокий<br>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <select name="js_framework" title="Javascript фреймворки">
+                                    <option disabled selected value="none">Укажите Javascript фреймворк</option>
+                                    <option value="angular">AngularJS</option>
+                                    <option value="ember">Ember.js</option>
+                                    <option value="backbone">Backbone.js</option>
+                                    <option value="react">React.js</option>
+                                </select>
+                            </td>
+                            <td>
+                                <input type="radio" name="js_framework_level" value="low" title="Начальный" checked>
+                                Начальный<br>
+                                <input type="radio" name="js_framework_level" value="medium" title="Средний">
+                                Средний<br>
+                                <input type="radio" name="js_framework_level" value="high" title="Высокий">
+                                Высокий<br>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <select name="vcs" title="Системы контроля версий">
+                                    <option disabled selected value="none">Укажите систему контроля версий</option>
+                                    <option value="git">Git</option>
+                                    <option value="svn">Subversion(SVN)</option>
+                                    <option value="mercurial">Mercurial</option>
+                                </select>
+                            </td>
+                            <td>
+                                <input type="radio" name="vcs_level" value="low" title="Начальный" checked>
+                                Начальный<br>
+                                <input type="radio" name="vcs_level" value="medium" title="Средний">
+                                Средний<br>
+                                <input type="radio" name="vcs_level" value="high" title="Высокий">
+                                Высокий<br>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="pass_photo">Ваша фотография(для пропуска):</label></td>
+                            <td><input type="file" id="pass_photo" name="pass_photo" accept="image/jpeg" required></td>
+                        </tr>
+                        <tr>
+                            <td align="right"><input type="reset" value="Очистить"></td>
+                            <td><input type="submit" value="Отправить"></td>
+                        </tr>
+                    </table>
+                </form>
+            </td>
+        </tr>
+        <tfoot>
+            <tr>
+                <td><hr>&copy NonExistentSoft. Developed by kinpa200296.</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
