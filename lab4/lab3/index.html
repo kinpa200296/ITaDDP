@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Практика в компании NonExistentSoft</title>
+        <link rel="stylesheet" href="css/common.css">
+        <link rel="stylesheet" href="css/controls.css">
+        <link rel="stylesheet" href="css/custom.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="logo">
+                <a href="http://www.NonExistentSoft.by">
+                    <img src="image/logo.png" alt="Логотип компании" title="Логотип компании">
+                </a>
+            </div>
+            <div class="video">
+                <video controls preload="metadata">
+                    <source src="video/about.mp4" type="video/mp4">
+                    К сожалению ваш браузер не может проиграть наш видеоролик
+                </video>
+            </div>
+            <div class="intro">
+                Если Вы хотите почуствовать себя профессиональном среди профессионалов,
+                то компания <strong>NonExistentSoft</strong> приглашает <em>Вас</em> пройти
+                <i>производственную</i> или <i>преддипломную</i> практику. Для того,
+                чтобы попасть к нам на практику <em>Вам</em> необходимо заполнить следующую форму:
+            </div>
+            <form action="result.html" method="post" enctype="multipart/form-data"
+                  autocomplete="off" target="_self" name="student_form" accept-charset="utf-8">
+                <div class="table">
+                    <div class="row">
+                        <div class="col label">
+                            <label for="first_name">Имя:</label>
+                        </div>
+                        <div class="col input">
+                            <input type="text" id="first_name" name="first_name"
+                                   placeholder="Ваше имя..." required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col label">
+                            <label for="last_name">Фамилия:</label>
+                        </div>
+                        <div class="col input">
+                            <input type="text" id="last_name" name="last_name"
+                                   placeholder="Ваша фамилия..." required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col label">
+                            <label for="middle_name">Отчество:</label>
+                        </div>
+                        <div class="col input">
+                            <input type="text" id="middle_name" name="middle_name"
+                                   placeholder="Ваше отчество..." required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col label">
+                            <label for="cellphone">Мобильный телефон:</label>
+                        </div>
+                        <div class="col input">
+                            <input type="tel" id="cellphone" name="cellphone"
+                                   placeholder="Ваш телефон..." required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col label">
+                            <label for="university">Университет:</label>
+                        </div>
+                        <div class="col input">
+                            <input type="text" id="university" name="university"
+                                   placeholder="Ваш университет..." required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col label">
+                            <label for="faculty">Факультет:</label>
+                        </div>
+                        <div class="col input">
+                            <input type="text" id="faculty" name="faculty"
+                                   placeholder="Ваш факультет..." required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col label">
+                            <label for="specialty">Специальность:</label>
+                        </div>
+                        <div class="col input">
+                            <input type="text" id="specialty" name="specialty"
+                                   placeholder="Ваша специальность..." required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col label">
+                            <label>Тип практики:</label>
+                        </div>
+                        <div class="col input">
+                            <input type="radio" name="practice_type" checked value="intern" title="Производственная">
+                            Производственная<br>
+                            <input type="radio" name="practice_type" value="diploma" title="Преддипломная">
+                            Преддипломная<br>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col label">
+                            <label for="practice_start">Дата начала практики:</label>
+                        </div>
+                        <div class="col input">
+                            <input type="date" id="practice_start" name="practice_start" min="2016-06-01"
+                                   max="2016-06-15" title="Дата начала практики" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col label">
+                            <label for="practice_end">Дата окончания практики:</label>
+                        </div>
+                        <div class="col input">
+                            <input type="date" id="practice_end" name="practice_end" min="2016-07-01" max="2016-07-15"
+                                   title="Дата окончания практики" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col label">
+                            <label>Желаемое время присутствия в офисе:</label>
+                        </div>
+                        <div class="col input">
+                            с <input type="time" name="day_start" title="Начало рабочего дня">
+                            до <input type="time" name="day_end" title="Конец рабочего дня">
+                        </div>
+                    </div>
+                    <div class="row text">
+                        Укажите свои навыки и степень владения ими:
+                    </div>
+                    <div class="row">
+                        <div class="col label text level">Навык</div>
+                        <div class="col input text level">Степень владения</div>
+                    </div>
+                    <div class="row">
+                        <div class="col label">
+                            <select name="language" title="Язык программирования">
+                                <option disabled selected value="none">Укажите язык программирования</option>
+                                <option value="cpp">C++</option>
+                                <option value="csharp">C#</option>
+                                <option value="java">Java</option>
+                                <option value="python">Python</option>
+                            </select>
+                        </div>
+                        <div class="col input level">
+                            <input type="radio" name="language_level" value="low" title="Начальный" checked>
+                            Начальный<br>
+                            <input type="radio" name="language_level" value="medium" title="Средний">
+                            Средний<br>
+                            <input type="radio" name="language_level" value="high" title="Высокий">
+                            Высокий<br>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col label">
+                            <select name="js_framework" title="Javascript фреймворки">
+                                <option disabled selected value="none">Укажите Javascript фреймворк</option>
+                                <option value="angular">AngularJS</option>
+                                <option value="ember">Ember.js</option>
+                                <option value="backbone">Backbone.js</option>
+                                <option value="react">React.js</option>
+                            </select>
+                        </div>
+                        <div class="col input level">
+                            <input type="radio" name="js_framework_level" value="low" title="Начальный" checked>
+                            Начальный<br>
+                            <input type="radio" name="js_framework_level" value="medium" title="Средний">
+                            Средний<br>
+                            <input type="radio" name="js_framework_level" value="high" title="Высокий">
+                            Высокий<br>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col label">
+                            <select name="vcs" title="Системы контроля версий">
+                                <option disabled selected value="none">Укажите систему контроля версий</option>
+                                <option value="git">Git</option>
+                                <option value="svn">Subversion(SVN)</option>
+                                <option value="mercurial">Mercurial</option>
+                            </select>
+                        </div>
+                        <div class="col input level">
+                            <input type="radio" name="vcs_level" value="low" title="Начальный" checked>
+                            Начальный<br>
+                            <input type="radio" name="vcs_level" value="medium" title="Средний">
+                            Средний<br>
+                            <input type="radio" name="vcs_level" value="high" title="Высокий">
+                            Высокий<br>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col label">
+                            <label for="pass_photo">Ваша фотография(для пропуска):</label>
+                        </div>
+                        <div class="col input">
+                            <input type="file" id="pass_photo" name="pass_photo" accept="image/jpeg" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col label">
+                            <input class="btn" type="reset" value="Очистить">
+                        </div>
+                        <div class="col input">
+                            <input class="btn" type="submit" value="Отправить">
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <div class="footer">
+                &copy NonExistentSoft. Developed by kinpa200296.
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,113 @@
+.header{
+    text-align: center;
+    background-color: #ebebeb;
+    padding: 10px 5px;
+    border-radius: 10px;
+}
+
+.header>.title{
+    font-size: 35pt;
+}
+
+.title{
+    font-size: 20pt;
+    color: blue;
+    padding: 10px;
+}
+
+.comment{
+    padding: 5px;
+    font-size: 14pt;
+    color: #b8860b;
+}
+
+.description{
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #ebebeb;
+
+}
+
+.details{
+    font-size: 14pt;
+    color: gray;
+}
+
+.details ul{
+    list-style-type: none;
+}
+
+.description .details ul{
+    margin-left: 20px;
+}
+
+.details li:before{
+    content: "-";
+    margin: 0 10px;
+}
+
+.description>.comment{
+    font-size: 12pt;
+}
+
+.code{
+    background-color: ghostwhite;
+    border-left: solid 5px forestgreen;
+    padding: 15px;
+}
+
+.table{
+}
+
+.row{
+    margin: 10px 0;
+}
+
+.table-header .col{
+    font-size: 16pt;
+    color: #b8860b;
+}
+
+.col{
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    background-color: #ebebeb;
+    padding: 15px;
+    border-radius: 10px;
+    color: blue;
+    font-size: 14pt;
+}
+
+.col.theme{
+    width: 19%;
+    margin: 0 0 0 2%;
+}
+
+.col.content{
+    width: 37%;
+    margin: 0 2%;
+    text-align: left;
+}
+
+.col.time{
+    width: 35%;
+    margin: 0 2% 0 0;
+    text-align: left;
+}
+.table-header .col.content, .table-header .col.time{
+    text-align: center;
+}
+
+.col .details{
+    color: inherit;
+}
+
+.col.content .details{
+    font-size: 12pt;
+}
+
+.col.time .details{
+    font-size: 11pt;
+}
