@@ -1,0 +1,89 @@
+.navbar{
+    position: absolute;
+    z-index: 1000;
+    border: none;
+}
+
+.navbar-left{
+    left: 0;
+    height: 100%;
+    width: 0;
+}
+
+.navbar-top{
+    top: 0;
+    width: 100%;
+}
+
+.navbar-right{
+    right: 0;
+    height: 100%;
+    width: 0;
+}
+
+.navbar-bottom{
+    bottom: 0;
+    width: 100%;
+}
+
+.navbar-fixed{
+    position: fixed;
+}
+
+.nav{
+    list-style-type: none;
+}
+
+.nav>li, .navbar-brand, .nav, .navbar-header{
+    display: inline-block;
+}
+
+.nav>li>a, .navbar-brand, .nav{
+    color: #428bca;
+    background-color: #fff;
+    white-space: nowrap;
+    text-decoration: none;
+    text-align: center;
+}
+
+.navbar-inverse .nav>li>a, .navbar-inverse .navbar-brand, .navbar-inverse .nav, .navbar{
+    color: #999;
+    background-color: #222;
+}
+
+.nav>li>a{
+    font-size: 12pt;
+}
+
+.navbar-brand{
+    font-size: 18pt;
+}
+
+.navbar-brand:hover, .nav>li>a:hover{
+    color: #2a6496;
+}
+
+.nav>li>a:hover{
+    background-color: #ebebeb;
+}
+
+.navbar-inverse .nav>li>a:hover, .navbar-inverse .navbar-brand:hover{
+    color: #fff;
+    background-color: #222;
+}
+
+.navbar-top .nav>li>a, .navbar-bottom .nav>li>a{
+    padding: 10px 15px;
+}
+
+.navbar-top .navbar-brand, .navbar-bottom .navbar-brand{
+    padding: 15px 15px;
+}
+
+.navbar-left .nav>li>a, .navbar-right .nav>li>a{
+    padding: 5px 15px;
+}
+
+.navbar-left .navbar-brand, .navbar-right .navbar-brand{
+    padding: 15px 15px;
+}
